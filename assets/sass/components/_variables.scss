@@ -1,0 +1,43 @@
+/* Déclaration des variables */
+
+// Colors
+$watterGreen: #5b786a;
+$sageGreen: #b0d7b5;
+$slateBlack: #444746;
+$slateBlackLight: #4447462a;
+$sandBeige: #e0d5ca;
+$whiteSandstone: #f6f3f0;
+$whiteSandstoneLight: #f6f3f09f;
+$whiteSandstoneMedium: #f6f3f0d7;
+$yellowTopz: #fedb88;
+$redClay: #f39a8b;
+$redClayLight: #f39b8bb0;
+
+// Fonts
+$title: "title";
+$logo: "logo";
+$text: "text";
+
+// Heights
+$mobileHeaderHeight: 139px;
+$tabletteHeaderHeight: 200px;
+$desktopHeaderHeight: 250px;
+$beforeAfterSeparationHeight: 10px;
+
+// Width
+$logoWidth: 45svw;
+$logoMaxWidth: 400px;
+$moloMinWidth: 150px;
+
+// Transitions
+$bounce: cubic-bezier(0.43, 0.77, 0.15, 1.5);
+$three: 0.3s ease-in-out;
+
+// Borders - boxshadows
+$borderBottom: 12px solid $sageGreen;
+$lightShadow: 1px 1px 5px rgba(0, 0, 0, 0.205);
+$strongShadow: 1px 1px 5px rgba(0, 0, 0, 0.805);
+$ctaBorr: 50px;
+$generalBorr: 8px;
+
+// @forward "variables";

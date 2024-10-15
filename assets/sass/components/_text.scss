@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 3svw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 3svw, 3rem);
+}
+
+h3,
+button {
+  font-size: clamp(1.8rem, 3svw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.7rem, 3svw, 2rem);
+}
+
+p,
+a:not(.logo-link),
+li,
+em {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.6rem, 3svw, 1.8rem);
+  color: $slateBlack;
+  font-style: normal;
+  margin: 0;
+}
+
+a:not(.logo-link) {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+}
