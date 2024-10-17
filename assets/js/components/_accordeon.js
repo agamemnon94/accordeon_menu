@@ -38,9 +38,19 @@ export function acccordeon() {
 export function accordion2(labelButtons) {
   labelButtons.forEach((labelBtn) => {
     labelBtn.addEventListener("click", function (e) {
+      const img = labelBtn.nextElementSibling.querySelector("span img");
+      if (labelBtn.checked === true) {
+        img.classList.add("active");
+      } else {
+        img.classList.remove("active");
+      }
+
       labelButtons.forEach((otherBtn) => {
         if (otherBtn !== e.target) {
+          const otherImg =
+            otherBtn.nextElementSibling.querySelector("span img");
           otherBtn.checked = false;
+          otherImg.classList.remove("active");
         }
       });
     });
