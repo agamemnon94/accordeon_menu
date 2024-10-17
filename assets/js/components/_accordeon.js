@@ -10,6 +10,9 @@ export function acccordeon() {
     const btnArrow = questionButton.querySelector("img");
 
     questionButton.addEventListener("click", (e) => {
+      response.classList.toggle("active");
+      btnArrow.classList.toggle("active");
+
       // Fermer toutes les autres réponses actives avant d'ouvrir la nouvelle
       // Interréssant si les réponse ne sont pas trop hautes si non ça décale trop
       questionContainers.forEach((otherContainer) => {
@@ -24,9 +27,22 @@ export function acccordeon() {
           otherBtnArrow.classList.remove("active");
         }
       });
+    });
+  });
+}
 
-      response.classList.toggle("active");
-      btnArrow.classList.toggle("active");
+/**
+ * Le comprtement par défaut des inputs checkox implique que l'input est soit checked soit pas. Le CSS va donc appliquer le style nécessaire. On a simplement à parcourrir les autres ckeckbox et passer leur attribut "checked" à false
+ * @param {Array} labelButtons
+ */
+export function accordion2(labelButtons) {
+  labelButtons.forEach((labelBtn) => {
+    labelBtn.addEventListener("click", function (e) {
+      labelButtons.forEach((otherBtn) => {
+        if (otherBtn !== e.target) {
+          otherBtn.checked = false;
+        }
+      });
     });
   });
 }
